@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Example</title>
+</head>
+<body>
+    <h1>Picture</h1>
+    <picture>
+        <source  media="(min-width: 600px)" srcset="../assets/image.jpg">
+        <source media="(min-width: 400px)" srcset="../assets/image2.jpg">
+        <img src="../assets/spider.jpg" alt="Spider" height="200" width="200">
+    </picture>
+    <img usemap="#my_mapping" src="../assets/shape.jpg" alt="Geometry Shapes">
+    <map name="my_mapping">
+        <!-- coords for rect: x, y, x+width, y+height -->
+        <area coords="55,434,258,639" shape="rect" href="https://youtu.be/iZbw7ezEJno?si=5uWoE-Hvf4ip7QSJ" alt="cid">
+        <area shape="circle" coords="154,225,71" href="" alt="cid" href="https://youtu.be/iZbw7ezEJno?si=5uWoE-Hvf4ip7QSJ" target="_blank">
+        <area shape="poly" coords="437,460,487,516,537,484,433,377,335,357,381,403" href="https://www.reddit.com/" alt="reddit" target="_blank">
+    </map>
+</body>
+</html>
