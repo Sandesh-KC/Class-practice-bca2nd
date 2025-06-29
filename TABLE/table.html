@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table example</title>
+  <style>
+    table, th, td{
+        /* border: width style color; */
+      border: 3px solid black;
+      /* multiple border line is made single */
+      border-collapse: collapse;
+      /* border radius only works if collapse removed */
+      border-radius: 20px;
+      justify-content: center;
+    }
+    table{
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    th, td{
+      height: 60px;
+    }
+    td{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Normal table</h1>
+    <!-- table header -->
+  <table>
+    <tr>
+      <th style="width: 60%;">Name</th>
+      <th style="width: 20%;">Address</th>
+      <th style="width: 20%;">Age</th>
+    </tr>
+    <!-- cell date or table data -->
+    <tr>
+      <td>John Doe</td>
+      <td>123 main st</td>
+      <td>38</td>
+    </tr>
+  </table>
+  <!-- 3*2 table -->
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Roll</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>45</td>
+    </tr>
+  </table>
+  <!-- vertical table -->
+  <table>
+    <tr>
+      <th>Id</th>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <td>Ram</td>
+      <td>Sita</td>
+    </tr>
+    <tr>
+      <th>Address</th>
+      <td>Ktm</td>
+      <td>Bkt</td>
+    </tr>
+  </table>
+        <!-- table with multiple column:colespan -->
+  <table>
+    <tr>
+    <th>S.No</th>
+    <th colspan="2">Full name</th>
+    <th>Age</th>
+    </tr>
+    <tr>
+      <td>100</td>   
+
+      <td>Ram</td>      
+      <td>Karki</td>      
+      <td>39</td>      
+    </tr>
+    <tr>
+      <td>101</td>      
+      <td>Sita</td>      
+      <td>Thapa</td>      
+      <td>50</td> 
+    </tr>
+  </table>
+</body>
+</html>
